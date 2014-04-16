@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.actuate.istudio.analysis.model:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.actuate.istudio.analysis.model="http:///com.actuate.istudio.analysis.model.ecore" name="BalancedScorecardDemo"/>
+<com.actuate.istudio.analysis.model:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.actuate.istudio.analysis.model="http:///com.actuate.istudio.analysis.model.ecore" name="BalancedScorecardDemo">
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="Balanced Scorecard.DATADESIGN" path="/BalancedScorecardDemo/Balanced Scorecard.DATADESIGN">
+    <dataSets name="List of Views">
+      <columns name="Id"/>
+      <columns name="Name"/>
+      <columns name="Description"/>
+      <columns name="SeqNo"/>
+    </dataSets>
+    <dataSets name="Measure Meta Data">
+      <columns name="MeasureName"/>
+      <columns name="LocationName"/>
+      <columns name="Description"/>
+      <columns name="Notes"/>
+      <columns name="Critical"/>
+      <columns name="Owner"/>
+      <columns name="OwnerAssistant"/>
+      <columns name="Link"/>
+      <columns name="UnitName"/>
+      <columns name="UnitDescription"/>
+      <columns name="UnitPrefix"/>
+      <columns name="UnitSuffix"/>
+      <columns name="UnitThousandSeparator"/>
+      <columns name="UnitDecimalSeparator"/>
+      <columns name="UnitWholeDigits"/>
+      <columns name="UnitDecimalDigits"/>
+      <columns name="Kind"/>
+      <columns name="Polarity"/>
+      <columns name="StoragePeriod"/>
+      <columns name="ConsolidationPeriod"/>
+      <columns name="LocationConsolidation"/>
+      <columns name="LocationIgnoreBlank"/>
+      <columns name="PeriodConsolidation"/>
+      <columns name="PeriodIgnoreBlank"/>
+      <columns name="OrderOfCalculation"/>
+      <columns name="Formula"/>
+      <columns name="Submeasures"/>
+      <columns name="SeqNo"/>
+    </dataSets>
+    <dataSets name="Hierarchy Info From View">
+      <columns name="MeasureLevel"/>
+      <columns name="ParentMeasureName"/>
+      <columns name="MeasureName"/>
+      <columns name="LocationLevel"/>
+      <columns name="ParentLocationName"/>
+      <columns name="LocationName"/>
+    </dataSets>
+    <dataSets name="Data From View">
+      <columns name="MeasureName"/>
+      <columns name="LocationName"/>
+      <columns name="PeriodName"/>
+      <columns name="BaseName"/>
+      <columns name="BaseData"/>
+      <columns name="CompName"/>
+      <columns name="CompData"/>
+      <columns name="CompVar"/>
+      <columns name="CompVarPct"/>
+      <columns name="CompIdx"/>
+      <columns name="CompIdxRangeId"/>
+      <columns name="CompIdxColor"/>
+      <columns name="CompTxtColor"/>
+      <columns name="WorstMsrIdxRangeId"/>
+      <columns name="WorstMsrIdxColor"/>
+      <columns name="WorstLocIdxRangeId"/>
+      <columns name="WorstLocIdxColor"/>
+      <columns name="SeqNo"/>
+      <columns name="Date" expression="new Date(&quot;01 &quot; + row[&quot;PeriodName&quot;])"/>
+    </dataSets>
+    <dataSets name="Commentary">
+      <columns name="MeasureName"/>
+      <columns name="LocationName"/>
+      <columns name="PeriodName"/>
+      <columns name="CommentaryType"/>
+      <columns name="CommentaryText"/>
+      <columns name="SignatureName"/>
+      <columns name="SignatureTime"/>
+      <columns name="SeqNo"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Sample Corp.DASHBOARD" path="/BalancedScorecardDemo/Sample Corp.DASHBOARD"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="ThemesReportItems3.rptlibrary" path="/BalancedScorecardDemo/ThemesReportItems3.rptlibrary"/>
+</com.actuate.istudio.analysis.model:Project>
